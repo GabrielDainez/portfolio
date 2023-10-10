@@ -1,0 +1,90 @@
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+.interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    list-style-type: none;
+}
+
+.menu{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: .5;
+    transition: transform 0.2s;
+}
+.menu:hover{
+    color: white;
+    opacity: 1;
+    transform: scale(1.8);
+    
+}
+
+
+.logo{
+    width: 50px ;
+}
+
+/*=======================================================================*/
+
+.hero-conteudo{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px ;
+    
+    img{
+        max-width: 350px;
+
+    }
+}
+
+.conteudo{
+    max-width: 45vw;
+
+    h1{
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 24px;
+        line-height: 150%;
+    }
+
+    .button-sobre{
+    padding: 14px 28px;
+    background-color: rgb(2, 2, 168);
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+    }
+    .button-sobre:hover{
+        animation: scaleButton 0.8s alternate infinite;
+    }
+    @keyframes scaleButton{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.07);
+        }
+    }
+}

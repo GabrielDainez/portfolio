@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+
+body{
+    height: 100vh;
+}
+@import "partials/header.scss";
+@import "partials/layout.scss";
+
+img{
+    width: 100%;
+}
