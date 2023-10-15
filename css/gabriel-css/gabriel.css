@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: #0f172a;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 40px 4%;
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+  list-style-type: none;
+}
+
+.menu {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  transition: transform 0.2s;
+}
+
+.menu:hover {
+  color: white;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.logo {
+  width: 50px;
+}/*# sourceMappingURL=gabriel.css.map */
