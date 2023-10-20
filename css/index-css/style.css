@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +29,7 @@ header {
 
 header {
   padding: 40px 4%;
+  height: 100vh;
 }
 
 .interface {
@@ -85,7 +90,8 @@ header {
   line-height: 150%;
 }
 .conteudo .button-sobre {
-  padding: 14px 28px;
+  float: left;
+  padding: 3px 7px;
   background-color: rgb(2, 2, 168);
   border: 0;
   font-size: 18px;
@@ -150,6 +156,7 @@ header {
   border-radius: 8px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
+  position: relative;
 }
 .foto img {
   width: 100%;

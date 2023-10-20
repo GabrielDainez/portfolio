@@ -1,41 +1,61 @@
 header{
-    background-color: #0f172a;
-}
-.interface{
-    max-width: 1280px;
-    margin: 0 auto;
+    background-color: #01080e;
 }
 
 header{
-    padding: 40px 4%;
+    padding: 50px 4%;
 }
 
 .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .navigation{
     display: flex;
     align-items: center;
+    justify-content: baseline;
     column-gap: 48px;
     list-style-type: none;
 }
 
-.menu{
+.button-contato{
+    color: #40bb7f;
+    border: 1px solid #40bb7f;
+    border-radius: 10px;
+    padding: 7px 14px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+
+.button-contato:hover{
+    background-color: #40bb7f;
     color: white;
-    font-size: 14px;
+}
+
+.menu{
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 2px;
     opacity: .5;
     transition: transform 0.2s;
 }
 .menu:hover{
-    color: white;
     opacity: 1;
     transform: scale(1.2);
     
+}
+.menu a{
+    color: white;
+}
+
+.menu a:hover{
+    color: #40bb7f;
 }
 
 .logo{

@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="interface container">
             <div>
-                <img class="logo" src="img/logo3.png" alt="">
+                <a href="index.html"><img class="logo" src="img/logo3.png" alt="logo"></a>
             </div>
-            <nav>
+            <nav >
                 <ul class="navigation">
-                    <li class="menu"><a href="#">Home</a></li>
-                    <li class="menu"><a href="#">Sobre nós</a></li>
+                    <li class="menu"><a href="#home">Home</a></li>
+                    <li class="menu"><a href="#sobre">Sobre nós</a></li>
                 </ul>
             </nav>
         </div>
-        <main class="hero">
+        <main class="hero container">
             <div class="hero-conteudo">
                 <div class="conteudo">
                     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur, corporis
@@ -29,9 +29,10 @@
                         dolores tempore sunt harum repellat odio vitae ducimus!</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur laboriosam obcaecati ullam.
                     </p>
-                    <a href="#" class="button-sobre">Sobre nós</a>
+                    <div class="button-sobre">
+                    <a href="#sobre" class="button-sobre">Sobre nós</a></div>
                 </div>
-                <div class="">
+                <div>
                     <img src="img/avatar.png" alt="avatar">
                 </div>
             </div>
@@ -39,7 +40,7 @@
     </header>
 
 
-    <section class="sobre">
+    <section class="sobre container" id="sobre">
             <div class="sobre-conteudo">
                 <h2>Sobre nós</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum facilis fugiat asperiores dignissimos

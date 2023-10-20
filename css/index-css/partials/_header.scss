@@ -8,6 +8,7 @@ header{
 
 header{
     padding: 40px 4%;
+    height: 100vh;
 }
 
 .interface{
@@ -22,6 +23,7 @@ header{
     column-gap: 48px;
     list-style-type: none;
 }
+
 
 .menu{
     color: white;
@@ -71,12 +73,13 @@ header{
     }
 
     .button-sobre{
-    padding: 14px 28px;
-    background-color: rgb(2, 2, 168);
-    border: 0;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 14px 0;
+        float: left;
+        padding: 3px 7px;
+        background-color: rgb(2, 2, 168);
+        border: 0;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 14px 0;
     }
     .button-sobre:hover{
         animation: scaleButton 0.8s alternate infinite;
