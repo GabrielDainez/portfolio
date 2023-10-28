@@ -163,7 +163,7 @@ header {
 }
 .foto img {
   width: 100%;
-  max-width: 374px;
+  max-width: 325px;
   transition: transform 0.25s;
 }
 
@@ -179,6 +179,10 @@ header {
   padding: 14px;
   background-color: white;
   z-index: 99;
+}
+
+section {
+  height: 100vh;
 }
 
 img {
