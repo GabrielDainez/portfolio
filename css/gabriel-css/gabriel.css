@@ -25,11 +25,11 @@ header {
 }
 
 header {
-  padding: 50px 4%;
   height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2 {
   font-family: "Lobster Two", sans-serif;
 }
 
@@ -37,12 +37,23 @@ p {
   font-family: "Frank Ruhl Libre", serif;
 }
 
+.container {
+  max-width: 1240px;
+}
+
 .interface {
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(1, 8, 14, 0.6509803922);
+}
+
+.interface-content {
+  margin: auto;
+  max-width: 1140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1280px;
-  margin: 0 auto;
+  padding: 24px 0;
 }
 
 .navigation {
@@ -100,6 +111,12 @@ p {
   width: 50px;
 }
 
+.main-container,
+.about-container {
+  max-width: 90%;
+  margin: auto;
+}
+
 .main-content {
   color: white;
   display: flex;
@@ -116,8 +133,11 @@ p {
 }
 
 .main-text {
-  text-align: center;
-  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 85px;
 }
 .main-text h1 {
   font-size: 4.5em;
@@ -135,10 +155,8 @@ p {
 .cotainer-sociais {
   margin-top: 14px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 575px;
-  padding-left: 67px;
+  gap: 30px;
 }
 
 .redes-sociais {
@@ -152,16 +170,20 @@ p {
   color: #40bb7f;
 }
 
-.about-container {
+.about {
   background-color: #ede7de;
-  height: 100vh;
+  height: 110vh;
+}
+
+.about-container {
+  max-width: 1140px;
 }
 
 .titulo {
   text-align: center;
   font-size: 4.5em;
   font-weight: 700;
-  padding: 38px 0;
+  padding: 32px 0;
   color: #025a4e;
 }
 
@@ -198,5 +220,59 @@ p {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+/*=====================================================================================*/
+.habilidades {
+  background-color: #01080e;
+  color: white;
+  height: 100vh;
+}
+
+.titulo-habilidades {
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 700;
+  padding: 32px 0;
+}
+.titulo-habilidades span {
+  color: #40bb7f;
+}
+
+.habilidades-content {
+  height: 60vh;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 32px;
+}
+
+.habilidades-content i {
+  color: #40bb7f;
+}
+
+.grid {
+  flex: 1;
+}
+
+.box {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #40bb7f;
+  box-shadow: 0px -1px 16px -6px #40bb7f;
+  transition: transform 0.4s ease;
+}
+.box h3 {
+  margin: 16px 0;
+}
+
+.box:hover {
+  transform: translateY(-10px);
 }/*# sourceMappingURL=gabriel.css.map */
