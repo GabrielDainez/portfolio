@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <div class="interface ">
             <div class="interface-content">
                 <div>
@@ -20,12 +20,12 @@
                 <nav class="navigation">
                     <ul class="navigation">
                         <li class="menu"><a class="index" href="index.html">Página inicial</a></li>
-                        <li class="menu"><a href="#">Início</a></li>
-                        <li class="menu"><a href="#">Sobre</a></li>
-                        <li class="menu"><a href="#">Skills</a></li>
-                        <li class="menu"><a href="#">Portfólio</a></li>
+                        <li class="menu"><a href="#inicio">Início</a></li>
+                        <li class="menu"><a href="#sobre">Sobre</a></li>
+                        <li class="menu"><a href="#habilidades">Habilidades</a></li>
+                        <li class="menu"><a href="#portfolio">Portfólio</a></li>
                     </ul>
-                    <div class="button"> Meu contato</div>
+                    <div class="button"><a href="#">Meu contato</a></div>
                 </nav>
             </div>
         </div>
@@ -49,7 +49,7 @@
             </div>
         </main>
     </header>
-    <section class="about"> 
+    <section class="about" id="sobre">
         <div class="container about-container">
             <h1 class="titulo">Sou Gabriel Dainez.</h1>
             <div class="about-content">
@@ -74,8 +74,10 @@
         </div>
     </section>
 
-    <section class="habilidades">
-        <div> <h1 class="titulo-habilidades">Minhas <span> habilidades.</span></h1></div>
+    <section class="habilidades" id="habilidades">
+        <div>
+            <h1 class="titulo-habilidades">Minhas <span> habilidades.</span></h1>
+        </div>
 
         <div class="habilidades-content">
             <article class="grid">
@@ -83,68 +85,77 @@
                     <i class="fa-brands fa-html5 fa-2xl"></i>
                     <h3>HTML</h3>
                     <p>Estruturação de site em HTML</p>
-                </article>
-            
-                <article class="grid">
-                    <div class="box">
-                        <i class="fa-brands fa-css3-alt fa-2xl"></i>
-                        <h3>CSS</h3>
-                        <p>Estilização de site com CSS</p>
-                    </div>
-                </article>
-                <article class="grid">
-                    <div class="box">
-                        <i class="fa-brands fa-square-js fa-2xl"></i>
-                        <h3>JavaScript</h3>
-                        <p>Construção de site usando JavaScript</p>
-                    </div>
-                </article>
-            </div>
+            </article>
+
+            <article class="grid">
+                <div class="box">
+                    <i class="fa-brands fa-css3-alt fa-2xl"></i>
+                    <h3>CSS</h3>
+                    <p>Estilização de site com CSS</p>
+                </div>
+            </article>
+            <article class="grid">
+                <div class="box">
+                    <i class="fa-brands fa-square-js fa-2xl"></i>
+                    <h3>JavaScript</h3>
+                    <p>Construção de site usando JavaScript</p>
+                </div>
+            </article>
+        </div>
         </div>
 
     </section>
 
-    <section class="portfolio">
-        <div class="container" >
-            <div><h2 class="titulo-portfolio">Meu <span>portfólio.</span</h2></div>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div>
+                <h2 class="titulo-portfolio">Meu <span>portfólio.</span< /h2>
+            </div>
 
             <div class="portfolio-content">
 
-                <div class="projeto"><p>Sem conteúdo</p>
+                <div class="projeto">
+                    <p>Sem conteúdo</p>
                     <div class="overlay">Projeto 1</div>
                 </div>
-                <div class="projeto"><p>Sem conteúdo</p>
+                <div class="projeto">
+                    <p>Sem conteúdo</p>
                     <div class="overlay">Projeto 1</div>
                 </div>
-                <div class="projeto"><p>Sem conteúdo</p>
+                <div class="projeto">
+                    <p>Sem conteúdo</p>
                     <div class="overlay">Projeto 1</div>
                 </div>
 
             </div>
-            
+
         </div>
     </section>
 
     <section class="contato">
         <div class="container"></div>
-        <div> <h2 class="titulo-contato">Contate-<span>me.</span></h2></div>
+        <div>
+            <h2 class="titulo-contato">Contate-<span>me.</span></h2>
+        </div>
 
         <form action="">
             <div class="formulario">
                 <input type="text" placeholder="Nome" required>
-                <input type="text" placeholder="Email" required> 
+                <input type="text" placeholder="Email" required>
                 <input type="text" placeholder="Assunto" required>
             </div>
             <div class="mensagem">
-            <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-            
+                <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
 
-            <div class="button-submit"><input type="submit" value="Enviar"></div>
-        </div>
+
+                <div class="button-submit"><input type="submit" value="Enviar"></div>
+            </div>
         </form>
     </section>
     <footer class=" rodape">
-        <div class="rodape-content container"><p text-rodape>CopyRight © 2022 Gabriel Dainez | Todos Os Direitos Reservados</p></div>
+        <div class="rodape-content container">
+            <p text-rodape>CopyRight © 2022 Gabriel Dainez | Todos Os Direitos Reservados</p>
+        </div>
     </footer>
 </body>
 
