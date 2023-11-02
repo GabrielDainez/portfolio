@@ -1,7 +1,7 @@
 .habilidades{
     background-color:#01080e ;
     color: white;
-    height: 100vh;
+    height: 110vh;
 }
 
 .titulo-habilidades{
@@ -37,14 +37,27 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border: 1px solid #40bb7f;
+        border: 2px solid #40bb7f;
         box-shadow: 0px -1px 16px -6px #40bb7f;
         transition: transform 0.4s ease;
+        border-radius: 20px;
     
         
         h3{margin: 16px 0;}
+
+        i{
+            padding: 25px 15px;
+            border: 1px solid #40bb7f;
+            border-radius: 5px;
+            transition: background-color 0.4s, color 0.4s;
+        }
     }
 
 .box:hover{
     transform: translateY(-10px);
+
+    i{
+        background-color: #40bb7f;
+        color: white;
+    }
 }

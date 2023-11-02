@@ -20,13 +20,15 @@ p {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1140px;
+    margin: auto;
 
 }
 .interface{
     position: fixed;
     width: 100vw;
     background-color: #01080ea6;
+    z-index: 999;
 }
 
 .interface-content {

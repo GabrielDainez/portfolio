@@ -1,0 +1,99 @@
+.contato{
+    background-color:#01080e ;
+    color: white;
+    height: 100vh;
+}
+
+.titulo-contato{
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 700;
+    padding: 32px 0;
+    
+    span{ color: #40bb7f;}
+}
+
+form{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 28px;
+    flex-direction: column;
+    margin-top: 40px;
+
+    .formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        
+    }
+
+    .mensagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    input, textarea{
+        width: 100%;
+        background: transparent;
+        height: 40px;
+        border: 1px solid #fff;
+        outline: 0;
+        box-shadow: none;
+        border-radius: 6px;
+        padding: 6px 12px;
+        font-size: 14px;
+        color: #e3e3e3;
+      
+    }
+
+    textarea{
+        resize: none;
+        overflow: auto;
+        margin-top: 10px;
+        padding-bottom: 5%;
+        height: 160px;
+        width: 100%;
+    }
+
+    .button-submit input{
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #40bb7f;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .button-submit input:hover{
+        background-color: #fff;
+        color: #40bb7f;
+
+    }
+}
+
+.rodape{
+    background-color: #01080e;
+}
+
+.rodape-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 20px 0;
+
+    p{
+        color: white;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+

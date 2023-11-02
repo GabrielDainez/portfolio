@@ -38,13 +38,15 @@ p {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1140px;
+  margin: auto;
 }
 
 .interface {
   position: fixed;
   width: 100vw;
   background-color: rgba(1, 8, 14, 0.6509803922);
+  z-index: 999;
 }
 
 .interface-content {
@@ -227,7 +229,7 @@ p {
 .habilidades {
   background-color: #01080e;
   color: white;
-  height: 100vh;
+  height: 110vh;
 }
 
 .titulo-habilidades {
@@ -265,14 +267,177 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #40bb7f;
+  border: 2px solid #40bb7f;
   box-shadow: 0px -1px 16px -6px #40bb7f;
   transition: transform 0.4s ease;
+  border-radius: 20px;
 }
 .box h3 {
   margin: 16px 0;
 }
+.box i {
+  padding: 25px 15px;
+  border: 1px solid #40bb7f;
+  border-radius: 5px;
+  transition: background-color 0.4s, color 0.4s;
+}
 
 .box:hover {
   transform: translateY(-10px);
+}
+.box:hover i {
+  background-color: #40bb7f;
+  color: white;
+}
+
+.portfolio {
+  background-color: #ede7de;
+  height: 110vh;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.titulo-portfolio {
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 700;
+  padding: 32px 0;
+  color: #01080e;
+}
+.titulo-portfolio span {
+  color: #025a4e;
+}
+
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projeto {
+  margin-top: 32px;
+  width: 350px;
+  height: 460px;
+  background-color: lightgray;
+  color: black;
+  font-family: none;
+  border-radius: 30px;
+  position: relative;
+}
+.projeto p {
+  font-size: 32px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(1, 8, 14, 0.8274509804);
+  transition: 1s;
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.contato {
+  background-color: #01080e;
+  color: white;
+  height: 100vh;
+}
+
+.titulo-contato {
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 700;
+  padding: 32px 0;
+}
+.titulo-contato span {
+  color: #40bb7f;
+}
+
+form {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+form .formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+form .mensagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}
+form input, form textarea {
+  width: 100%;
+  background: transparent;
+  height: 40px;
+  border: 1px solid #fff;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #e3e3e3;
+}
+form textarea {
+  resize: none;
+  overflow: auto;
+  margin-top: 10px;
+  padding-bottom: 5%;
+  height: 160px;
+  width: 100%;
+}
+form .button-submit input {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #40bb7f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+form .button-submit input:hover {
+  background-color: #fff;
+  color: #40bb7f;
+}
+
+.rodape {
+  background-color: #01080e;
+}
+
+.rodape-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 20px 0;
+}
+.rodape-content p {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
 }/*# sourceMappingURL=gabriel.css.map */

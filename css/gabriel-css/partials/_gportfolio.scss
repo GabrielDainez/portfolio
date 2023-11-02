@@ -1,0 +1,65 @@
+.portfolio{
+    background-color: #ede7de ;
+    height: 110vh;
+    
+}
+.container{
+    max-width: 1140px;
+}
+
+.titulo-portfolio{
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 700;
+    padding: 32px 0;
+    color: #01080e;
+    span{
+        color: #025a4e;
+    }
+    
+}
+.portfolio-content{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.projeto{
+    margin-top: 32px;
+    width: 350px;
+    height: 460px;
+    background-color: lightgray;
+    color: black;
+    font-family: none;
+    border-radius: 30px;
+    position: relative;
+
+    p{
+        font-size: 32px;
+
+    }
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: #01080ed3;
+    transition:1s;
+    opacity: 0;
+    
+    
+
+}
+.overlay:hover{
+    opacity: 1;
+}
