@@ -29,7 +29,7 @@ header {
 }
 
 header {
-  height: 100vh;
+  height: auto;
 }
 
 h1,
@@ -182,7 +182,8 @@ a {
 
 .about {
   background-color: #ede7de;
-  height: 110vh;
+  height: auto;
+  padding: 0 80px 4% 4%;
 }
 
 .about-container {
@@ -237,7 +238,8 @@ a {
 .habilidades {
   background-color: #01080e;
   color: white;
-  height: 110vh;
+  height: auto;
+  padding: 80px 4%;
 }
 
 .titulo-habilidades {
@@ -300,7 +302,8 @@ a {
 
 .portfolio {
   background-color: #ede7de;
-  height: 110vh;
+  height: auto;
+  padding: 80px 4%;
 }
 
 .container {
