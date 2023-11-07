@@ -1,7 +1,7 @@
 .portfolio{
     background-color: #ede7de ;
-    height: auto;
-    padding: 80px 4%;
+    height: 110vh;
+    padding: 4rem 4%;
     
 }
 .container{
@@ -10,9 +10,8 @@
 
 .titulo-portfolio{
     text-align: center;
-    font-size: 4.5em;
+    font-size: 7.5em;
     font-weight: 700;
-    padding: 32px 0;
     color: #01080e;
     span{
         color: #025a4e;
@@ -23,12 +22,12 @@
     display: flex;
     justify-content: space-between ;
     align-items: center;
+    padding-top: 6rem;
 }
 
 .projeto{
-    margin-top: 32px;
-    width: 350px;
-    height: 460px;
+    width: 25vw;
+    height: 65vh;
     background-color: lightgray;
     color: black;
     font-family: none;
@@ -36,7 +35,7 @@
     position: relative;
 
     p{
-        font-size: 32px;
+        font-size: 3.2rem;
 
     }
 }
@@ -51,7 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     color: white;
     background-color: #01080ed3;
