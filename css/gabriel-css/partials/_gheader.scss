@@ -1,4 +1,4 @@
-header {
+#background {
     background-color: #01080e;
 
     background-color: #01080E;
@@ -7,7 +7,7 @@ header {
 }
 
 header {
-    height: 100vh;
+    height: auto;
 }
 
 h1,
@@ -20,7 +20,7 @@ p {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1240px;
     margin: auto;
 
 }
@@ -48,7 +48,8 @@ p {
     list-style-type: none;
 }
 
-.button {
+.button-contact {
+    background-color: transparent;
     color: #40bb7f;
     border: 1px solid #40bb7f;
     border-radius: 10px;
@@ -64,7 +65,7 @@ a{
     color: #40bb7f;
 }
 
-.button:hover {
+.button-contact:hover{
     background-color: #40bb7f;
     color: white;
 }
@@ -83,11 +84,11 @@ a{
 
 }
 
-.menu a {
+.link-menu {
     color: white;
 }
 
-.menu a:hover {
+.link-menu:hover {
     color: #40bb7f;
 }
 
@@ -109,7 +110,7 @@ a{
 
 .main-content {
     color: white;
-    padding: 7.8rem 4.5rem;
+    padding: 14rem 4.5rem;
 
 }
 
@@ -118,16 +119,16 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 9rem;
+    padding-top: 6rem;
 
 
     h1 {
-        font-size: 7.5rem;
+        font-size: 8rem;
         font-weight: 700;
     }
 
     p {
-        font-size: 2rem;
+        font-size: 2.1rem;
         font-weight: 400;
     }
 
@@ -154,5 +155,8 @@ a{
 
     a {
         color: #40bb7f;
+    }
+    i{
+        font-size: 2.5em;
     }
 }
