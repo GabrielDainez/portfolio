@@ -1,0 +1,73 @@
+.titulo-habilidades{
+    text-align: center;
+    color: white;
+    font-size: 5.3rem;
+
+    span{
+        color: #40bb7f ;
+    }
+}
+.skill-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    margin-top: 64px;
+}
+.skill-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #40bb7f;
+    box-shadow: 0px -1px 16px -6px #40bb7f;
+    flex: 1;
+    transition: all 0.4s;
+
+    i{
+        color: #40bb7f;
+        font-size: 50px;
+        padding:  10px 15px;
+        border: 1px solid #40bb7f;
+        border-radius: 12px;
+        transition: background-color 0.4s, color 0.4s;
+    }
+
+    h3{
+      font-size: 28px;  
+      margin: 16px 0;
+      font-weight: 700;
+    }
+
+    p{
+        font-size: 18px;
+    }
+}
+.skill-box:hover{
+    transform: translateY(-10px);
+
+        i{
+            color: white;
+            background-color: #40bb7f;
+        }
+} 
+
+
+
+@media screen and (max-width: 767px){
+    .titulo-habilidades{
+        font-size: 3.3rem;
+    }
+    .skill-content{
+        flex-direction: column;
+    
+
+        .skill-box{
+            padding: 35px 0 35px 0;
+            
+        }
+
+    }
+}

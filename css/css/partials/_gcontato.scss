@@ -1,33 +1,26 @@
-.contato{
-    background-color:#01080e ;
-    color: white;
-    height: auto;
-    padding: 4rem 4%;
-    
-}
-
 .titulo-contato{
     text-align: center;
-    font-size: 7.5em;
-    font-weight: 700;
-    
-    span{ color: #40bb7f;}
-}
+    color: white;
+    font-size: 5.3rem;
 
+    span{
+        color: #40bb7f ;
+    }
+}
 form{
-    max-width: 1140px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     gap: 28px;
     flex-direction: column;
-    padding-top: 6rem;
+    padding-top: 64px;
 
     .formulario{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.6rem;
-        
+        gap: 16px;
+        flex: 1;
     }
 
     .mensagem{
@@ -35,20 +28,20 @@ form{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 4.5rem;
+        gap: 34px;
     }
 
     input, textarea{
         width: 100%;
         background: transparent;
-        height: 4.0rem;
-        border: 1px solid #fff;
+        border: 1.5px solid #fff;
         outline: 0;
         box-shadow: none;
         border-radius: 6px;
-        padding: 0.6rem 1.2rem;
-        font-size: 1.6rem;
+        padding: 12px 18px;
+        font-size: 16px;
         color: #e3e3e3;
+        transition: 0.4s;
       
     }
 
@@ -57,14 +50,15 @@ form{
         overflow: auto;
         margin-top: 1rem;
         padding-bottom: 5%;
-        height: 16rem;
+        height: 260px;
         width: 100%;
+        
     }
 
     .button-submit input{
-        width: 15rem;
-        height: 5rem;
-        font-size: 1.6rem;
+        width: 160px;
+        height: 60px;
+        font-size: 24px;
         font-weight: 600;
         background-color: #40bb7f;
         color: white;
@@ -78,6 +72,11 @@ form{
         color: #40bb7f;
 
     }
+}
+
+form input:focus-within, textarea:focus-within{
+    border: 1.5px solid #40bb7f;
+    
 }
 
 .rodape{
@@ -94,7 +93,36 @@ form{
     p{
         color: white;
         font-weight: 400;
-        font-size: 1.6rem;
+        font-size: 18px;
+        opacity: 0.8;
     }
 }
 
+
+@media screen and (max-width: 767px){
+    .titulo-contato{
+        font-size: 3.3rem;
+    }
+
+    .formulario{
+        flex-direction: column;
+    }
+    
+    form {
+        gap: 0;
+
+        textarea{
+            height: 160px;
+        }
+    }
+
+    form .button-submit input{
+        width: 120px;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .rodape-content p{
+        font-size: 12px;
+    }
+}

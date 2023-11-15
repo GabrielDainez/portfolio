@@ -1,33 +1,26 @@
-.portfolio{
-    background-color: #ede7de ;
-    height: auto;
-    padding: 4rem 4%;
-    
+#portfolio{
+    background-color: #ede7de;
 }
-.container{
-    max-width: 1140px;
-}
-
 .titulo-portfolio{
     text-align: center;
-    font-size: 7.5em;
-    font-weight: 700;
-    color: #01080e;
+    color: black;
+    font-size: 5.3rem;
+
     span{
-        color: #025a4e;
+        color: #3ba874 ;
     }
-    
 }
 .portfolio-content{
     display: flex;
     justify-content: space-between ;
     align-items: center;
-    padding-top: 6rem;
+    margin-top: 64px;
+    gap: 24px;
 }
 
 .projeto{
-    width: 25vw;
-    height: 65vh;
+    width: 360px;
+    height: 420px;
     background-color: lightgray;
     color: black;
     font-family: none;
@@ -62,4 +55,23 @@
 }
 .overlay:hover{
     opacity: 1;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .portfolio-content{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .titulo-portfolio{
+        font-size: 3.3rem;
+    }
+
+    .projeto{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
 }
