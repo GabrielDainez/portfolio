@@ -6,11 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 54px 14px;
+    
 }
 
 .sobre-conteudo h2{
-    text-transform: uppercase;
     text-align: center;
     font-size: 4rem;
     margin-bottom: 14px;
@@ -73,11 +72,35 @@
     gap: 36px;
 
     p{
-        max-width: 300px;
+        max-width: 360px;
     }
 
     img{
-        width: 100px;
+        width: 120px;
     }
 }
 
+
+
+@media screen and (max-width: 822px){
+    section{
+        padding: 80px 10%;
+    }
+    .sobre-conteudo p{
+       
+        font-size: 1.2rem;
+        
+    }
+
+    .fotos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .footer-content{
+        
+    }
+}
