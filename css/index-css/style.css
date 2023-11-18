@@ -68,7 +68,7 @@ header .interface {
 }
 
 .navigation-link:hover {
-  color: #40bb7f;
+  color: #ff6496;
   opacity: 1;
   transform: scale(1.3);
 }
@@ -237,7 +237,7 @@ section.inicio {
 
 @media screen and (max-width: 822px) {
   section {
-    padding: 80px 10%;
+    padding: 60px 10%;
   }
   .sobre-conteudo p {
     font-size: 1.2rem;
