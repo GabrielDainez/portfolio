@@ -14,10 +14,21 @@ a{
 
 body{
     height: 100vh;
+    font-family: 'Unna', serif;
+    background-image: linear-gradient(to right bottom, #22469a, #0b3c7b, #06305c, #0c243e, #0f1721);
 }
+
 @import "partials/header.scss";
 @import "partials/layout.scss";
 
 img{
     width: 100%;
 }
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Unna:ital,wght@0,700;1,400;1,700&display=swap');
+

@@ -1,25 +1,18 @@
 
-.container{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 .sobre{
-    background-color: white;
+    background-color: #f6f6f6;
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 54px 14px;
-    max-width: 1140px;
-    margin: 0 auto;
 }
 
 .sobre-conteudo h2{
     text-transform: uppercase;
     text-align: center;
-    font-size: 38px;
+    font-size: 4rem;
     margin-bottom: 14px;
 }
 
@@ -28,6 +21,7 @@
     margin-bottom: 14px;
     text-align: center;
     max-width: 780px;
+    font-size: 1.1rem;
 }
 
 .fotos{
@@ -49,7 +43,7 @@
 
     img{
         width: 100%;
-        max-width: 325px;
+        max-width: 374px;
         transition: transform 0.25s;
     }
 }
@@ -66,8 +60,24 @@
     padding: 14px;
     background-color: white;
     z-index: 99;
+    color: black;
 }
 
-section{
-    height: 100vh;
+
+.footer-content{
+    padding: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+
+    p{
+        max-width: 300px;
+    }
+
+    img{
+        width: 100px;
+    }
 }
+
