@@ -126,3 +126,18 @@ form input:focus-within, textarea:focus-within{
         font-size: 12px;
     }
 }
+
+
+.btn-up{
+    color: #40bb7f;
+    position: fixed;
+    font-size: 2.5rem;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+    transition: transform 0.4s;
+}
+
+.btn-up:hover{
+    transform: scale(1.1);
+}
