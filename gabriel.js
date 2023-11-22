@@ -14,4 +14,20 @@ overlay.addEventListener('click',()=>{
     menu.classList.remove('abrir-menu')
 })
 
-AOS.init();
+/*=====================scrollreveal=====================*/
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+
+ScrollReveal().reveal('.content, .titulo, .titulo-habilidades, .titulo-portfolio, .titulo-contato' , { origin: 'top'});
+
+
+ScrollReveal().reveal('.skill-content, .portfolio-content, form' , { origin: 'bottom'});
+
+ScrollReveal().reveal('.foto' , { origin: 'left'});
+
+ScrollReveal().reveal('.about-text' , { origin: 'right'});
