@@ -107,7 +107,7 @@ section{
 
 .foto-inicio{
     width: 300px;
-    height: 300px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -118,12 +118,24 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 16px;
+
+
+    p{
+        font-size: 1.4rem;
+    }
+
+    .texto-animado {
+        font-size: 4.6rem ;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: .7px #40bb7f;
+    }
 }
 
 .content h1 {
     color: white;
     text-align: center;
-    font-size: 6rem;
+    font-size: 5.6rem;
 
 }
 
@@ -137,24 +149,96 @@ section{
     font-size: 1.6rem;
 }
 
+.sociais-inicio .btn-sobre {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid #40bb7f;
+    border-radius: 12px;
+    letter-spacing: 0.1rem;
+    font-size: 16px;
+    padding: 12px 3px;
+    z-index: 1;
+    overflow: hidden;
+    color: #40bb7f;
+    transition: 0.5s;
+
+    
+}
+.sociais-inicio .btn-sobre:hover{
+    color: white;
+}
+
+
+.sociais-inicio .btn-sobre::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color:#40bb7f;
+    z-index: -1;
+    transition: 0.5s;
+}
+.sociais-inicio .btn-sobre:hover::before{
+    width: 100%;
+
+}
 .sociais-inicio{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 180px;
+    gap: 120px;
 }
 
 .sociais-inicio .redes-sociais{
-    list-style-type: none;
     display: flex;
     gap: 16px;
 
-    i{
+    a{
+        position:relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #40bb7f;
+        background-color: transparent;
+        border-radius: 50%;
+        font-size: 18px;
         color: #40bb7f;
-        font-size: 26px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #40bb7f;
+        z-index: -1;
+        transition: 0.5s;
     }
 
+    a:hover::before{
+        width: 100%;
 
+        
+    }
+    a:hover{
+        color: white;
+    }
 }
 
 

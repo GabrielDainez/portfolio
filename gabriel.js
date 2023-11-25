@@ -30,4 +30,3 @@ ScrollReveal().reveal('.skill-content, .portfolio-content, form' , { origin: 'bo
 
 ScrollReveal().reveal('.foto' , { origin: 'left'});
 
-ScrollReveal().reveal('.about-text' , { origin: 'right'});
