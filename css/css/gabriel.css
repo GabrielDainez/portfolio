@@ -25,6 +25,20 @@ body {
   color: white;
 }
 
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  width: 16px;
+  box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.3137254902);
+  background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #40bb7f;
+}
+
 .background {
   background-color: #01080e;
 }
@@ -140,10 +154,29 @@ section {
   font-size: 1.4rem;
 }
 .content .texto-animado {
+  position: relative;
   font-size: 4.6rem;
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 0.7px #40bb7f;
+  background-image: linear-gradient(#40bb7f, #40bb7f);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: homeBgText 6s linear infinite;
+  animation-delay: 2s;
+}
+.content .texto-animado::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid #40bb7f;
+  z-index: -1;
+  animation: homeCursorText 6s linear infinite;
+  animation-delay: 2s;
 }
 
 .content h1 {
@@ -182,25 +215,9 @@ section {
 }
 
 .sociais-inicio .btn-sobre:hover {
-  color: white;
-}
-
-.sociais-inicio .btn-sobre::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 100%;
   background-color: #40bb7f;
-  z-index: -1;
-  transition: 0.5s;
-}
-
-.sociais-inicio .btn-sobre:hover::before {
-  width: 100%;
+  color: white;
+  scale: 1.1;
 }
 
 .sociais-inicio {
@@ -210,11 +227,11 @@ section {
   gap: 120px;
 }
 
-.sociais-inicio .redes-sociais {
+.redes-sociais {
   display: flex;
   gap: 16px;
 }
-.sociais-inicio .redes-sociais a {
+.redes-sociais a {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -230,22 +247,10 @@ section {
   overflow: hidden;
   transition: 0.5s;
 }
-.sociais-inicio .redes-sociais a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #40bb7f;
-  z-index: -1;
-  transition: 0.5s;
-}
-.sociais-inicio .redes-sociais a:hover::before {
-  width: 100%;
-}
-.sociais-inicio .redes-sociais a:hover {
+.redes-sociais a:hover {
   color: white;
+  background-color: #40bb7f;
+  scale: 1.1;
 }
 
 .sociais-inicio button {
@@ -379,6 +384,26 @@ section {
     display: block;
   }
 }
+@keyframes homeBgText {
+  0%, 10%, 100% {
+    background-position: -43rem 0;
+  }
+  65%, 85% {
+    background-position: 0 0;
+  }
+}
+@keyframes homeCursorText {
+  0%, 10%, 100% {
+    width: 0%;
+  }
+  65%, 78%, 85% {
+    width: 100%;
+    opacity: 1;
+  }
+  75%, 81% {
+    opacity: 0;
+  }
+}
 #sobre {
   background-color: #ede7de;
   color: black;
@@ -396,20 +421,20 @@ section {
 .about-content {
   margin-top: 64px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 100px;
 }
 .about-content .about-text {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  width: 720px;
 }
 .about-content .about-text h3 {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
 }
 .about-content .about-text p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .foto img {
@@ -427,15 +452,6 @@ section {
   align-items: center;
   padding: 0px 16px 0px 5px;
   gap: 16px;
-}
-.sociais-about .redes-sociais {
-  display: flex;
-  gap: 16px;
-  list-style-type: none;
-}
-.sociais-about i {
-  color: #3ba874;
-  font-size: 26px;
 }
 .sociais-about button {
   background-color: transparent;
@@ -467,15 +483,15 @@ section {
     gap: 50px;
   }
   .about-content .about-text {
-    gap: 30px;
     align-items: center;
+    max-width: 250px;
   }
   .about-content .about-text h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     text-align: center;
   }
   .about-content .about-text p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 }

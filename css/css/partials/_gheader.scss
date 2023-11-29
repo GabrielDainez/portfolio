@@ -1,30 +1,29 @@
-
-.background{
+.background {
     background-color: #01080e;
 }
 
-header{
+header {
     padding: 0px 4%;
     background-color: #01080e9a;
     position: fixed;
     width: 100%;
     z-index: 999;
-    
+
 }
 
-header .interface{
+header .interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
 }
 
-.menu-desktop{
+.menu-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,11 +100,11 @@ header .interface{
 }
 
 /*========================================================================*/
-section{
+section {
     padding: 60px 4%;
 }
 
-.foto-inicio{
+.foto-inicio {
     width: 300px;
     height: auto;
     border-radius: 50%;
@@ -120,15 +119,36 @@ section{
     gap: 16px;
 
 
-    p{
+    p {
         font-size: 1.4rem;
     }
 
     .texto-animado {
-        font-size: 4.6rem ;
+        position: relative;
+        font-size: 4.6rem;
         font-weight: 700;
         color: transparent;
         -webkit-text-stroke: .7px #40bb7f;
+        background-image: linear-gradient(#40bb7f, #40bb7f);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: homeBgText 6s linear infinite;
+        animation-delay: 2s;
+
+    }
+
+    .texto-animado::before{
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #40bb7f;
+        z-index: -1;
+        animation: homeCursorText 6s linear infinite;
+        animation-delay: 2s;
     }
 }
 
@@ -143,7 +163,7 @@ section{
     color: #40bb7f;
 }
 
-.content{
+.content {
     color: white;
     text-align: center;
     font-size: 1.6rem;
@@ -167,43 +187,28 @@ section{
     color: #40bb7f;
     transition: 0.5s;
 
-    
+
 }
-.sociais-inicio .btn-sobre:hover{
+
+.sociais-inicio .btn-sobre:hover {
+    background-color: #40bb7f;
     color: white;
+    scale: 1.1;
 }
 
-
-.sociais-inicio .btn-sobre::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 100%;
-    background-color:#40bb7f;
-    z-index: -1;
-    transition: 0.5s;
-}
-.sociais-inicio .btn-sobre:hover::before{
-    width: 100%;
-
-}
-.sociais-inicio{
+.sociais-inicio {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 120px;
 }
 
-.sociais-inicio .redes-sociais{
+.redes-sociais {
     display: flex;
     gap: 16px;
 
-    a{
-        position:relative;
+    a {
+        position: relative;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -218,33 +223,21 @@ section{
         overflow: hidden;
         transition: 0.5s;
     }
-    
-    a::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #40bb7f;
-        z-index: -1;
-        transition: 0.5s;
-    }
 
-    a:hover::before{
-        width: 100%;
 
-        
-    }
-    a:hover{
+
+
+    a:hover {
         color: white;
+        background-color: #40bb7f;
+        scale: 1.1;
     }
 }
 
 
 
 
-.sociais-inicio button{
+.sociais-inicio button {
     background-color: transparent;
     border: 1px solid #40bb7f;
     color: #40bb7f;
@@ -262,47 +255,48 @@ section{
     color: white;
 }
 
-@media screen and (max-width: 820px){
+@media screen and (max-width: 820px) {
 
-    section{
+    section {
         padding: 70px 10%;
     }
 
-    section#topo-site{
+    section#topo-site {
         padding: 40px 10px;
     }
 
-    header{
+    header {
         position: sticky;
     }
-    .menu-desktop{
+
+    .menu-desktop {
         display: none;
     }
 
-    .foto-inicio{
+    .foto-inicio {
         width: 300px;
         height: 300px;
     }
 
-    .content{
+    .content {
         padding: 0rem 0 0rem 0;
         gap: 42px;
 
-        h1{
+        h1 {
             font-size: 3rem;
         }
 
-        p{
+        p {
             font-size: 1.1rem;
         }
     }
 
-    .sociais-inicio{
+    .sociais-inicio {
         gap: 16px;
 
     }
 
-    .troca{
+    .troca {
         display: flex;
         flex-direction: row;
     }
@@ -311,9 +305,9 @@ section{
 
 /*=====================Menu Mobile========================================*/
 
-.menu-mobile{
+.menu-mobile {
     display: none;
-    background-color:#01080e;
+    background-color: #01080e;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -323,13 +317,13 @@ section{
     overflow: hidden;
     transition: .5s;
 
-    nav ul{
+    nav ul {
         text-align: right;
         list-style-type: none;
     }
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: white;
     font-size: 20px;
     font-weight: 400;
@@ -338,40 +332,42 @@ section{
 }
 
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #40bb7f;
     color: #01080e;
 }
 
-.menu-mobile .btn-fechar{
+.menu-mobile .btn-fechar {
     padding: 15px 6%;
 }
 
-.menu-mobile .btn-fechar i{
+.menu-mobile .btn-fechar i {
     color: #40bb7fc9;
     font-size: 30px;
 }
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 47%;
 }
-.menu-mobile.abrir-menu ~ .overlay-menu{
+
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.btn-abrir i{
+.btn-abrir i {
     color: #40bb7f;
     font-size: 32px;
     display: none;
-    
+
 }
-.troca{
+
+.troca {
     display: flex;
     flex-direction: row-reverse;
 }
 
 
-.overlay-menu{
+.overlay-menu {
     background-color: rgba(0, 0, 0, 0.658);
     width: 100%;
     height: 100%;
@@ -382,12 +378,47 @@ section{
     display: none;
 }
 
-@media screen and (max-width: 820px){
-    .menu-mobile{
+@media screen and (max-width: 820px) {
+    .menu-mobile {
         display: block;
     }
 
-    .btn-abrir i{
+    .btn-abrir i {
         display: block;
     }
+}
+
+
+@keyframes homeBgText{
+    0%,
+    10%,
+    100% { 
+        background-position: -43rem 0;
+    }
+
+   65%,
+   85%{
+    background-position: 0 0;
+   } 
+}
+
+
+@keyframes homeCursorText{
+    0%,
+    10%,
+    100% { 
+        width: 0%;
+    }
+
+   65%,
+   78%,
+   85%{
+    width: 100%;
+    opacity: 1;
+   } 
+
+   75%,
+   81%{
+    opacity: 0;
+   }
 }
