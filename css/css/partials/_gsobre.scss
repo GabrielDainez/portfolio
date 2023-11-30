@@ -80,6 +80,7 @@ span{
 @media screen and (max-width: 820px){
     .titulo{
         font-size: 3.4rem;
+        text-align: center;
     }
 
     .foto img{
@@ -93,10 +94,10 @@ span{
 
         .about-text{
             align-items: center;
-            max-width: 250px;
+            max-width: 350px;
 
             h3{
-                font-size: 2rem;
+                font-size: 1.8rem;
                 text-align: center;
             }
 
