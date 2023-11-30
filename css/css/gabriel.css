@@ -405,10 +405,13 @@ section {
   }
 }
 .titulo {
-  text-align: center;
-  font-size: 5.3rem;
+  font-size: 3.3rem;
 }
 .titulo span {
+  color: #3ba874;
+}
+
+span {
   color: #3ba874;
 }
 
@@ -575,7 +578,7 @@ section {
 
 .projeto {
   width: 400px;
-  height: 350px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   background-color: #0e1011;
