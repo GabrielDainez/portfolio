@@ -15,6 +15,7 @@ span{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 24px;
     
     
     
@@ -24,9 +25,11 @@ span{
         flex-direction: column;
         gap: 28px;
         width: 720px;
+        letter-spacing: 1.6px;
+        line-height: 38px;
 
         h3{
-            font-size: 2.6rem;
+            font-size: 2.2rem;
         }
 
         p{

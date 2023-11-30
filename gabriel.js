@@ -23,12 +23,10 @@ ScrollReveal({
 });
 
 
-ScrollReveal().reveal('.titulo, .titulo-habilidades, .titulo-portfolio, .titulo-contato' , { origin: 'top'});
+ScrollReveal().reveal('.titulo-habilidades, .titulo-portfolio, .titulo-contato, .foto' , { origin: 'top'});
 
+ScrollReveal().reveal('.skill-content, .portfolio-content, form, .about-text' , { origin: 'bottom'});
 
-ScrollReveal().reveal('.skill-content, .portfolio-content, form' , { origin: 'bottom'});
-
-ScrollReveal().reveal('.foto' , { origin: 'left'});
 
 /*========================links=========================*/
 
